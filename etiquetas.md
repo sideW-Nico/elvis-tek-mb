@@ -1,65 +1,64 @@
-# Etiquetas relevantes
+# Etiquetas de HTML
 
-- `<!DOCTYPE html>`: Etiqueta principal, indica que es una pagina de tipo HTML.
+- `<!DOCTYPE html>`: Indica que el documento es tipo HTML.
+- `<html>...</html>`: Espacio donde se alojan las etiquetas para la pagina.
 
-- `<html>...</html>`: Almacena todo el contenido de la pagina, incluyendo lo visual y los metadatos. Se utiliza la etiqueta `lang` para indicar el lenguaje de la pagina.
+- `<head>...</head>`: Contiene los metadatos de la pagina. Es decir, configuraciones o informacion relevante para el navegador e indexadores de motores de busqueda.
 
-- `<head>...</head>`
+- `<body>...</body>`: Espacio donde se alojan las etiquetas correspondientes a lo visual de la pagina.
 
-- `<body>...</body>`
+- `<meta>`: Datos y configuraciones relevantes para el navegador y los motores de busqueda.
 
-- `<h1>...</h1>`
+- `<title>...</title>`: Titulo que aparece en la pestaña del navegador.
 
-- `<blockquote>...</blockquote>`
+- `<h1>...</h1>`: Primer titulo, se puede llegar hasta el titulo nivel 6.
 
-- `<q>...</q>`: Referencia al autor.
+- `<img>`: Inserta una imagen. Se necesita el atributo `src` para agregar la ruta de la imagen. `alt` en caso de que la etiqueta no cargue. `title` para que aparezca el titulo de la imagen al poner el cursor encima.
 
-- `<cite>...</cite>`: Referencia a titulos... 
+- `<figure>...</figure>`: Envuelve la imagen, se usa cuando se tiene una coleccion de imagenes y fragmentos de codigo.
 
-- `<img>`: Inserta imagen. `src` para indicar la fuente, `alt` para texto alternativo si la imagen falla en cargar.
+- `<code>...</code>`: Muestra un fragmento de codigo.
 
-- `<button>...</button>`
+- `<figcaption>...</figcaption>`: Pasaje descriptivo de la imagen dentro de figure.
 
-- `<p>...</p>`
+- `<blockquote>...</blockquote>`: Cita que se utiliza cuando se referencia o parafraseo largo de un autor o pagina. Envuelve todo el contenido citado.
 
-- `<span>...</span>`
+- `<cite>...</cite>`: Se utiliza cuando se hace referencia a un autor.
 
-- `<figure>...</figure>`
+- `<q>...</q>`: Parafraseo o citado corto.
 
-- `<figcaption>...</figcaption>`
+- `<i>...</i>`: Cursiva.
 
-- `<br>`: Salto de linea
+- `<em>...</em>`: Cursiva pero con violencia (haciendo enfasis).
 
-- `<hr>`: Linea horizontal
+- `<b>...</b>`: Negrita.
 
-- `<ol>...</ol>`: Lista organizada.
+- `<strong>...</strong>`: Negrita pero con violencia (con enfasis).
 
-- `<ul>...</ul>`: Lista deorganizada.
+- `<u>...</u>`: Subrayado. (El canal no...)
 
-- `<li>...</li>`: Item de la lista.
+- `<button>...</button>`: Boton generico. `disabled` Para inhabilitarlo.
 
-- <table>...</table>
+- `<p>...</p>`: Parrafo.
 
-- <thead>...</thead>: Categorias
+- `<span>...</span>`: Texto breve. %&^!X3$#$%$ #@$#$$@#$$#$#@ $%$#$#$%&#$&$#%%#
 
-- <tbody>...</tbody>: Datos
+- `<a>...</a>`: Hipervinculo. `href` para ingresar la ruta/url a la cual redirigirse. `target` indica si abrirlo en la misma pestania o en otra, para abrirlo en otra se usa `target="_blank`. Se usa `mailto` en el atributo `href` para redirigir al usuario a enviar un correo, ejemplo: `href="mailto:correo@aol.com"`. Lo mismo de mailto ocurre con `tel`.
 
-- <tfoot>...</tfoot>: Pie de la tabla
+- `<ul>...</ul>`: Seccion de lista desordenada.
 
-- <tr>...</tr>: Fila
+- `<ol>...</ol>`: Seccion de lista ordenada. Por defecto son numeros, pero con el atributo `type` se puede ordenar por letras u otros estilos. Con `start` se puede indicar desde que numero o letra empieza.
 
-- <th>...</th>: Titulos de las columnas
+- `<li>...</li>`: Elemento de la lista.
 
-- <td>...</td>: Datos que se ubican en la fila
+- `<table>...</table>`: Seccion correspondiente a una tabla.
 
-- a
+- `<thead>...</thead>`: Cabecera de la tabla, tiene las categorias.
 
-- em
+- `<th>...</th>`: Nombre de la columna si esta en `thead`, sino, nombre de la fila cuando esta en `tbody`.
 
-- i
+- `<tbody>...</tbody>`: Seccion donde se ubican las celdas con valores de la tabla.
 
-- b
+- `<tr>...</tr>`: Filas donde se colocan las columnas.
 
-- strong
-
-- u
+- `<td>...</td>`: Dato que se coloca en cada columna.
