@@ -11,13 +11,61 @@
 
     <hr>
     <ul>
-        <li><a href="index.html">Volver al inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="trabajaConNosotros.html">Trabaja con nosotros</a></li>
+        <li><a href="login.html">Ingresar al sistema</a></li>
     </ul>
     <hr>
 
     <p>
-        En caso de estar interesado en consultar por nuestro catálogo de productos, puedes comunicarte a través de los siguientes medios:
+        En caso de estar interesado en consultar por nuestro catálogo de productos, puedes comunicarte a través del
+        siguiente formulario:
     </p>
+    
+    <form action="formularioExitoso.html" method="post">
+        <fieldset>
+            <legend>Formulario de consultas</legend>
+            <fieldset>
+                <legend>Informacion de contacto</legend>
+        
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" autocomplete="given-name" required>
+        
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" autocomplete="family-name" required>
+        
+                <label for="numero">Número de teléfono</label>
+                <input type="text" id="numero" name="numero" placeholder="Ingrese su número" pattern="09[0-9]{7}"
+                    inputmode="numeric" autocomplete="tel"
+                    title="Debe ingresar un número uruguayo de 9 dígitos que comience con 09" required>
+        
+                <label for="correoElectronico">Correo electrónico</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" placeholder="Ingrese su correo electrónico"
+                    autocomplete="email" pattern=".*\.com$" required>
+            </fieldset>
+            
+    
+            <fieldset>
+                <legend>Tipo de consulta</legend>
+    
+                <label for="detalleConsulta">Detalles de la consulta</label>
+                <textarea id="detalleConsulta" name="detalleConsulta" placeholder="Describa su consulta" autocomplete="off"
+                    required></textarea>
+    
+                <label for="tipoConsulta">Seleccione el tipo de consulta</label>
+                <select name="tipoConsulta" id="tipoConsulta" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="catalogo">Catálogo</option>
+                    <option value="repuesto">Repuesto</option>
+                    <option value="desperfecto">Desperfecto</option>
+                </select>
+            </fieldset>
+    
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
     <ul>
         <li>
             Teléfono:

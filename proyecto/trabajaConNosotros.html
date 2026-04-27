@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+</head>
+<body>
+    <h1>¡Estamos buscando gente!</h1>
+    <img src="assets/img/imagen_generica.png" alt="Logo de la empresa">
+    
+    <hr>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="trabaja_con_nosotros.html">Trabaja con nosotros</a></li>
+        <li><a href="login.html">Ingresar al sistema</a></li>
+    </ul>
+    <hr>
+
+    <h2>Requisitos</h2>
+    <ul>
+        <li>Mayor de 18</li>
+        <li>Que quiera trabajar</li>
+        <li>Que no se queje por salario minimo</li>
+    </ul>
+
+    <form action="formularioExitoso.html" method="post">
+        <fieldset>
+            <legend>Solicitud de trabajo</legend>
+    
+            <label for="correoElectronico">Correo electrónico</label>
+            <input type="email" name="correoElectronico" id="correoElectronico" placeholder="Ingrese su correo electrónico"
+                autocomplete="email" required>
+    
+            <label for="curriculumVitae">Currículum Vitae (PDF)</label>
+            <input type="file" name="curriculumVitae" id="curriculumVitae" accept=".pdf,application/pdf" required>
+    
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" autocomplete="off" required></textarea>
+    
+            <input type="checkbox" name="aceptaContacto" id="aceptaContacto" required>
+            <label for="aceptaContacto">Acepto ser contactado por la empresa</label>
+    
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <p>Por cualquier duda comunicarse a <a href="mailto:trabajoGratis@gmail.com"><em>trabajoGratis@gmail.com</em></a> con el asunto "TRABAJO".</p>
+</body>
+</html>

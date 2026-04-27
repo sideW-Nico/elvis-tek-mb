@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <h1>Ingreso al sistema</h1>
+    <img src="assets/img/imagen_generica.png" alt="Logo de la empresa">
+
+    <hr>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="trabajaConNosotros.html">Trabaja con nosotros</a></li>
+        <li><a href="login.html">Ingresar al sistema</a></li>
+    </ul>
+    <hr>
+
+    <form action="formularioExitoso.html" method="post">
+        <fieldset>
+            <legend>Inicio de Sesión</legend>
+    
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" autocomplete="username" pattern="[1-9][0-9]{7}"
+                title="Ingrese exactamente 8 dígitos sin puntos ni guiones" inputmode="numeric" maxlength="8" required>
+    
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" autocomplete="current-password" minlength="12" required>
+    
+        </fieldset>
+    
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</body>
+</html>
