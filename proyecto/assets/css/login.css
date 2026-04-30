@@ -1,0 +1,76 @@
+.seccionLogin {
+    background-color: var(--blancoPuro);
+    color: var(--medio);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 520px;
+    min-height: 300px;
+}
+
+.seccionLogin h2 {
+    color: var(--medio);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.seccionLogin form {
+    background-color: var(--blancoPuro);
+    color: var(--oscuro);
+    max-width: 420px;
+}
+
+.seccionLogin legend {
+    color: var(--oscuro);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.seccionLogin label {
+    color: var(--oscuro);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.seccionLogin input {
+    width: 100%;
+    max-width: 360px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    color: var(--oscuro);
+    background-color: var(--grisClaro);
+}
+
+.seccionLogin input:focus {
+    background-color: var(--blancoCristal);
+    color: var(--oscuro);
+}
+
+.seccionLogin button {
+    width: 100%;
+    max-width: 360px;
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.seccionLogin button:hover,
+.seccionLogin button:focus {
+    background-color: var(--medio);
+    color: var(--blancoPuro);
+}
+
+.seccionLogin button:active {
+    background-color: var(--oscuro);
+    color: var(--amarillo);
+}
+
+footer {
+    max-width: 520px;
+}

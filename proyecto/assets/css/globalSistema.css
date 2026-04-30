@@ -1,0 +1,98 @@
+body {
+    background-color: var(--grisClaro);
+}
+
+/* Encabezado interno */
+
+header {
+    background-color: var(--oscuro);
+    color: var(--blancoPuro);
+}
+
+header h1 {
+    color: var(--blancoPuro);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+header .botonNavegacion {
+    background-color: var(--medio);
+    color: var(--blancoPuro);
+    font-size: 16px;
+}
+
+header .botonNavegacion:hover,
+header .botonNavegacion:focus {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+
+header .botonNavegacion:active {
+    background-color: var(--gris);
+    color: var(--oscuro);
+}
+
+.seccionTablaEmpleados {
+    background-color: var(--blancoPuro);
+    color: var(--oscuro);
+
+}
+
+.seccionTablaEmpleados h2 {
+    color: var(--oscuro);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+tr:hover td {
+    background-color: var(--blancoCristal);
+    color: var(--oscuro);
+}
+
+tr:active td {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+
+.seccionOperaciones {
+    background-color: var(--oscuro);
+    color: var(--blancoPuro);
+    min-height: 160px;
+    text-align: center;
+}
+
+.seccionOperaciones h2 {
+    color: var(--amarillo);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.seccionOperaciones ul {
+    list-style-type: none;
+}
+
+.seccionOperaciones li {
+    line-height: 2.5;
+}
+
+.botonOperacion {
+    background-color: var(--medio);
+    color: var(--blancoPuro);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.botonOperacion:hover,
+.botonOperacion:focus {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+
+.botonOperacion:active {
+    background-color: var(--gris);
+    color: var(--oscuro);
+}

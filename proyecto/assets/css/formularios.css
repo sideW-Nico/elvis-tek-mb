@@ -1,0 +1,62 @@
+.seccionFormulario {
+    color: var(--oscuro);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.seccionFormulario h2,
+.seccionFormulario legend {
+    color: var(--oscuro);
+    font-weight: 700;
+}
+
+.seccionFormulario label {
+    color: var(--oscuro);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.seccionFormulario input,
+.seccionFormulario textarea,
+.seccionFormulario select {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: var(--oscuro);
+    width: 100%;
+    max-width: 500px;
+}
+
+.seccionFormulario option {
+    color: var(--oscuro);
+}
+
+.seccionFormulario textarea {
+    min-height: 120px;
+}
+
+.seccionFormulario input:focus,
+.seccionFormulario textarea:focus,
+.seccionFormulario select:focus {
+    background-color: var(--grisClaro);
+    color: var(--oscuro);
+}
+
+.seccionFormulario button {
+    background-color: var(--oscuro);
+    color: var(--blancoCristal);
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.seccionFormulario button:hover,
+.seccionFormulario button:focus {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+
+.seccionFormulario button:active {
+    background-color: var(--medio);
+    color: var(--medio);
+}

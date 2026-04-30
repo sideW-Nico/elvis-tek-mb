@@ -110,6 +110,22 @@
 
 - `minlength` : Limita el minimo de caracteres que se pueden utilizar.
 
+### HTML5
+
+- `header`: Espacio donde se ubica la cabecera de la página. Comúnmente utilizado para colocar el título principal, logo, elementos de navegación y buscadores de contenido.
+
+- `nav`: Espacio donde se ubican los elementos interactivos para navegar dentro de la página, yendo a otras secciones de la página o navegando dentro de una misma.
+
+- `main`: Envuelve todo el contenido principal, siendo tanto el tema principal como las funcionalidades primarias.
+
+- `section`: Sección del contenido principal. Agrupa por subtemas/funcionalidades de la página.
+
+- `article`: Contenido individual de una sección, se utiliza para identificar publicaciones/comentarios/funcionalidades individuales.
+
+- `aside`: Comúnmente va fuera del apartado `main`. Posee contenido secundario como barras laterales, publicidad, o inclusive enlaces asociados a otros temas.
+
+- `footer`: Es el pie de la página, comúnmente posee información de contacto y derechos de autor.
+
 ### Miscelaneos
 
 - `<a>...</a>`: Hipervinculo. `href` para ingresar la ruta/url a la cual redirigirse. `target` indica si abrirlo en la misma pestania o en otra, para abrirlo en otra se usa `target="_blank`. Se usa `mailto` en el atributo `href` para redirigir al usuario a enviar un correo, ejemplo: `href="mailto:correo@aol.com"`. Lo mismo de mailto ocurre con `tel`. Ejemplo: `<a href="otraPagina.html" target="_blank">Enlace</a>`

@@ -1,0 +1,18 @@
+.listaProductos li{
+  display: inline-block;
+}
+
+.testimonio blockquote {
+    color: var(--medio);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.imagenProducto {
+    max-width: 150px;
+    height: auto;
+}
+
+.testimonio img {
+  max-width: 70px;
+}

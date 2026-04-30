@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/formularios.css">
 </head>
+
 <body>
-    <h1>Contactactanos</h1>
-    <img src="assets/img/imagen_generica.png" alt="Logo de la empresa">
+    <header>
+        <img src="assets/img/imagen_generica.png" alt="Logo de la empresa" class="logo">
+        <h1>Contáctanos</h1>
 
-    <hr>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
-        <li><a href="trabajaConNosotros.html">Trabaja con nosotros</a></li>
-        <li><a href="login.html">Ingresar al sistema</a></li>
-    </ul>
-    <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="botonNavegacion">Inicio</a></li>
+                <li><a href="sobreNosotros.html" class="botonNavegacion">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="botonNavegacion">Contáctanos</a></li>
+                <li><a href="trabajaConNosotros.html" class="botonNavegacion">Trabaja con nosotros</a></li>
+                <li><a href="login.html" class="botonNavegacion">Ingresar al sistema</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>
-        En caso de estar interesado en consultar por nuestro catálogo de productos, puedes comunicarte a través del
-        siguiente formulario:
-    </p>
-    
-    <form action="formularioExitoso.html" method="post">
-        <fieldset>
-            <legend>Formulario de consultas</legend>
-            <fieldset>
-                <legend>Informacion de contacto</legend>
-        
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" autocomplete="given-name" required>
-        
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" autocomplete="family-name" required>
-        
-                <label for="numero">Número de teléfono</label>
-                <input type="text" id="numero" name="numero" placeholder="Ingrese su número" pattern="09[0-9]{7}"
-                    inputmode="numeric" autocomplete="tel"
-                    title="Debe ingresar un número uruguayo de 9 dígitos que comience con 09" required>
-        
-                <label for="correoElectronico">Correo electrónico</label>
-                <input type="email" id="correoElectronico" name="correoElectronico" placeholder="Ingrese su correo electrónico"
-                    autocomplete="email" pattern=".*\.com$" required>
-            </fieldset>
-            
-    
-            <fieldset>
-                <legend>Tipo de consulta</legend>
-    
-                <label for="detalleConsulta">Detalles de la consulta</label>
-                <textarea id="detalleConsulta" name="detalleConsulta" placeholder="Describa su consulta" autocomplete="off"
-                    required></textarea>
-    
-                <label for="tipoConsulta">Seleccione el tipo de consulta</label>
-                <select name="tipoConsulta" id="tipoConsulta" required>
-                    <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="catalogo">Catálogo</option>
-                    <option value="repuesto">Repuesto</option>
-                    <option value="desperfecto">Desperfecto</option>
-                </select>
-            </fieldset>
-    
-            <button type="submit">Enviar</button>
-        </fieldset>
-    </form>
+    <main>
+        <section class="seccionContacto">
+            <h2>Medios de contacto</h2>
+            <address>
+                <ul>
+                    <li>
+                        Teléfono:
+                        <a href="tel:+59898368967"><strong>098368967</strong></a>
+                    </li>
+                    <li>
+                        Correo:
+                        <a href="mailto:CorreoGenerico@gmail.com"><em>CorreoGenerico@gmail.com</em></a>
+                    </li>
+                </ul>
+            </address>
+        </section>
+        <section class="seccionFormulario">
+            <h2>Formulario de consultas</h2>
+            <p>
+                En caso de estar interesado en consultar por nuestro catálogo de productos, puedes comunicarte a través
+                del
+                siguiente formulario:
+            </p>
 
-    <ul>
-        <li>
-            Teléfono:
-            <a href="tel:+59898368967"><strong>098368967</strong></a>
-        </li>
-        <li>
-            Correo:
-            <a href="mailto:CorreoGenerico@gmail.com"><em>CorreoGenerico@gmail.com</em></a>
-        </li>
-    </ul>
+            <form action="formularioExitoso.html" method="post">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"
+                            autocomplete="given-name" required>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"
+                            autocomplete="family-name" required>
+
+                        <label for="numero">Número de teléfono</label>
+                        <input type="tel" id="numero" name="numero" placeholder="Ingrese su número" pattern="09[0-9]{7}"
+                            inputmode="numeric" autocomplete="tel"
+                            title="Debe ingresar un número uruguayo de 9 dígitos que comience con 09" required>
+
+                        <label for="correoElectronico">Correo electrónico</label>
+                        <input type="email" id="correoElectronico" name="correoElectronico"
+                            placeholder="Ingrese su correo electrónico" autocomplete="email" required>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Tipo de consulta</legend>
+
+                        <label for="detalleConsulta">Detalles de la consulta</label>
+                        <textarea id="detalleConsulta" name="detalleConsulta" placeholder="Describa su consulta"
+                            autocomplete="off" required></textarea>
+
+                        <label for="tipoConsulta">Seleccione el tipo de consulta</label>
+                        <select name="tipoConsulta" id="tipoConsulta" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="catalogo">Catálogo</option>
+                            <option value="repuesto">Repuesto</option>
+                            <option value="desperfecto">Desperfecto</option>
+                        </select>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <a href="http://instagram.com">@todoenblanco</a>
+            <a href="tel:+4567 7373">+4567 7373</a>
+            <a href="tel:098318897">098 318 897</a>
+            <a href="mailto:todoenblanco@gmail.com.">todoenblanco@gmail.com.</a>
+        </address>
+        <p>© 2026 Todo en Blanco</p>
+    </footer>
 </body>
-</html>l
+
+</html>
